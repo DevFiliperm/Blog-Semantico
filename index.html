@@ -11,17 +11,106 @@
 <body>
   <header>
     <nav class="navbar">
-      <h1>BLOG</h1>
+      <h1>ExploraMundo</h1>
 
       <ul class="navbar-links">
         <li><a href="#">home</a></li>
         <li><a href="#">categorias</a></li>
-        <li><a href="#">contato</a></li>
+        <li><a href="#contato">contato</a></li>
       </ul>
-
+      
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
 
     </nav>
   </header>
+
+  <div class="container">
+    <main id="posts-container">
+
+      <article class="post">
+        <img src="assets/img/rio.jpg" alt="Rio de Janeiro">
+
+        <h2 class="title">Rio de Janeiro</h2>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita blanditiis sed exercitationem, consectetur autem earum repellat consequatur vitae accusamus quisquam atque dolores cum suscipit, assumenda eligendi commodi ipsum aut.</p>
+        <p class="author">Por: Filipe Rodrigues</p>
+        <a href="#">Ler mais</a>
+      </article>
+
+      <article class="post">
+        <img src="assets/img/suiça.jpg" alt="Montanhas na Suiça">
+
+        <h2 class="title">Suiça</h2>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita blanditiis sed exercitationem, consectetur autem earum repellat consequatur vitae accusamus quisquam atque dolores cum suscipit, assumenda eligendi commodi ipsum aut.</p>
+        <p class="author">Por: Filipe Rodrigues</p>
+        <a href="#">Ler mais</a>
+      </article>
+
+      <article class="post">
+        <img src="assets/img/sydney.jpg" alt="Sydney">
+
+        <h2 class="title">Sydney</h2>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita blanditiis sed exercitationem, consectetur autem earum repellat consequatur vitae accusamus quisquam atque dolores cum suscipit, assumenda eligendi commodi ipsum aut.</p>
+        <p class="author">Por: Filipe Rodrigues</p>
+        <a href="#">Ler mais</a>
+      </article>
+
+    </main>
+
+    <aside id="sidebar">
+      <section id="search-bar">
+        <h4>Busca:</h4>
+
+        <form>
+          <input type="text" placeholder="O que você busca?">
+          <input type="submit" value="Buscar">
+        </form>
+      </section>
+
+      <section id="categories">
+        <h4>Categorias</h4>
+        <ul>
+          <li>Paisagem</li>
+          <li>Turismo</li>
+          <li>Cultura</li>
+          <li>Florestas</li>
+          <li>Praia</li>
+        </ul>
+      </section>
+
+      <section id="tags">
+        <h4>Tags</h4>
+
+        <div id="tags-container">
+          <a href="#">LifeStyle</a>
+          <a href="#">Viagem</a>
+          <a href="#">Praia</a>
+          <a href="#">Montanha</a>
+          <a href="#">Barco</a>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <div class="contact-container" id="contato">
+    <section id="contact">
+      <h2>Entre em contato</h2>
+      <p>Mande a sua dúvida sobre algum local </p>
+
+      <form id="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Escreva a sua dúvida"></textarea>
+        <input type="submit" value="enviar">
+      </form>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <p>2024 &copy; Filipe Rodrigues</p>
+  </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
