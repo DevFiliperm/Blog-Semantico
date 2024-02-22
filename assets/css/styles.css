@@ -11,6 +11,9 @@ a{
 }
 
 header{
+  width: 100%;
+  position: fixed;
+  top: 0;
   padding: 1.5em 2em;
   border-bottom: 2px solid #9affa8 ;
   background-color: #277a47;
@@ -326,7 +329,7 @@ textarea{
 @media (max-width:425px){
   .container{
     gap: 1.5em;
-    padding: 1em 2em;
+    padding: 5em 2em 1em;
   }
   
   #contact h2{
